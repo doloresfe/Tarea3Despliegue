@@ -1,0 +1,270 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans';
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 100%;
+}
+
+h4{
+    font-size: 20px;
+}
+h3{
+    font-size: 30px;
+    
+}
+
+.container{
+
+    display:block;
+
+}
+
+/* ---------------------------cabecera con foto-------------------------- */
+header{
+    width: 100%;
+    height:600px;
+    background: url(img/principal.jpg);
+    background-position: center;
+    background-size: cover;
+     
+}
+
+/* cabecera navegacion */
+nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    background-color:rgb(5, 5, 5) ;
+    display:flex;
+    justify-content: space-between;    
+    position: fixed; 
+}
+
+
+.nav1{
+    background: rgb(0, 0, 0) ;
+    opacity: 80%;
+    z-index: 0;
+    height: 80px;
+    color:rgb(255, 255, 255);
+}
+
+/* logo audi */
+.navegacion img{
+    height:80px;   
+}
+
+
+.enlaces a{
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* enlaces a otras páginas */
+.enlaces{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+/* Movimiento del cursor en la navegación */
+nav .enlaces a:hover{
+    border-bottom: 3px solid #ffffff;
+    transition: 0.6s;
+  }
+
+/* ----------------------------------------------------------------- */
+
+/* ----------------------------Modelos nuevos------------------------------------- */
+
+.contenedor{
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3;
+    width: 90%;
+    padding: 10px;
+    padding-bottom: 10px;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.contenedor h3{
+    margin-bottom: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.content-card{
+    background-color: rgb(255, 255, 255); 
+    width: 32%;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    overflow: hidden;
+    height:400px;
+}
+
+.card{
+    height: 80%;
+}
+
+
+.content-card img{
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+    border-radius: 20px solid black ; 
+}
+
+.content-card:hover{
+    border-bottom: 2px solid #ffffff;
+   
+    transition: 0.9s;
+}
+
+
+
+
+/* ----------------------------------------Formulario--------------------------------------- */
+form { 
+  
+    padding: 20px; 
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 10px; 
+    margin: 0 auto; 
+    width: 40%;
+   
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de los campos de texto */
+  input[type="text"], 
+  input[type="email"], 
+  textarea { 
+    width: 100%; 
+    padding: 12px; 
+    border: 2px solid rgb(8, 8, 8); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+  }
+  /* Estilos del botón de envío */
+  input[type="submit"] { 
+    background-color: #000000; 
+    color: white; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+ 
+  
+  }
+  /* Estilos para el botón al hacer hover */
+  input[type="submit"]:hover { 
+    background-color: #a04545; 
+   
+  }
+  
+  /* --------------------------------------------------------------------------- */
+
+  /*------------------------------------footer------------------------------------ */
+footer {
+    background-color: rgb(17, 17, 17);
+    opacity: 80%;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 33%;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+   /* --------------------------------------------------------------------------- */
+
+
+
+   @media screen and (max-width: 700px){
+    
+section iframe {
+
+    height: 400px;
+    width: 60%;
+  }
+   
+    body{
+      align-items:center ;
+    
+    }
+  
+    .content-card{
+      width: 90%;
+    }
+  
+/* Footer */
+form { 
+  
+    padding: 20px; 
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 10px; 
+    margin: 0 auto; 
+  }
+  
+  /* Estilos de los campos de texto */
+  input[type="text"], 
+  input[type="email"], 
+  textarea { 
+    width: 100%; 
+    padding: 12px; 
+    border: 2px solid rgb(8, 8, 8); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+  }
+  /* Estilos del botón de envío */
+  input[type="submit"] { 
+    background-color: #000000; 
+    color: white; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+  }
+  /* Estilos para el botón al hacer hover */
+  input[type="submit"]:hover { 
+    background-color: #a04545; 
+  }
+  
+  }
+  
